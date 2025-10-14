@@ -62,7 +62,9 @@ Propagation Delay | $d_{prop}$ | This is the amount of time the bits are travell
 
 ### Packet Queueing Delay
 
-Recall the definitions of $L$ and $R$ from before. These will be used to determine the traffic intensity, which has a heavy impact on the average queuing delay. The traffic intensity follows the formula $ \text{Traffic Intensity} = \frac{La}{R} $ where the not yet introduced variable, $a$, is the average arrival rate of the packets. When the traffic intensity is near 0, the queueing delay is very small, when it is near 1, it is very large, if it is above 1, then the average delay will be infinite, as the queue will never be completed.
+Recall the definitions of $L$ and $R$ from before. These will be used to determine the traffic intensity, which has a heavy impact on the average queuing delay. The traffic intensity follows the formula $ \text{Traffic Intensity} = I = \frac{La}{R} $ where the not yet introduced variable, $a$, is the average arrival rate of the packets. When the traffic intensity is near 0, the queueing delay is very small, when it is near 1, it is very large, if it is above 1, then the average delay will be infinite, as the queue will never be completed.
+
+The queueing delay is calculated as $ I(\frac{L}{R(1-I)}) $ for $ I < 1 $
 
 ## 5-layer Internet Model
 
